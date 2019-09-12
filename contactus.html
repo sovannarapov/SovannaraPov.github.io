@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contactus | loyosja.com</title>
+    <link rel="stylesheet" href="fontawesome-free-5.6.3-web/css/all.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="Shortcut icon" href="title-icon.png" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <ul class="topnav" id="dropdownClick">
+        <li>
+          <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li class="topnav-right">
+          <a href="javascript: void(0);" onclick="popUp2()">Sign Up</a>
+        </li>
+        <li class="topnav-right">
+          <a href="javascript: void(0);" onclick="popUp()">Sign In</a>
+        </li>
+        <li class="dropdownIcon">
+          <a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Login Form -->
+    <div class="popup" id="openPop">
+      <div class="btnClose" onclick="exit()">
+        <h1>X</h1>
+      </div>
+      <div class="loginForm">
+        <form>
+          <h1>Sign In</h1>
+          <hr />
+          <h3>Username</h3>
+          <input type="text" placeholder="Username" />
+          <h3>Password</h3>
+          <input type="password" placeholder="Password" />
+          <div style="clear: both;"></div>
+          <a href="#" class="rememberMe">Remember Me </a>
+          <!-- <input type="checkbox"> -->
+          <button onclick="running()">Sign In</button>
+          <a href="#">Forgot Password</a>
+          <h4>---------------------</h4>
+          <button onclick="sorry()">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- SignUp Form -->
+    <div class="popup" id="openPop2">
+      <div class="btnClose" onclick="exit2()">
+        <h1>X</h1>
+      </div>
+      <div class="loginForm">
+        <form>
+          <h1>Sign Up</h1>
+          <hr />
+          <h3>Email</h3>
+          <input type="text" placeholder="Email" required />
+          <h3>Fullname</h3>
+          <input type="text" placeholder="Fullname" required />
+          <h3>Password</h3>
+          <input type="password" placeholder="Password" required />
+          <div style="clear: both;"></div>
+          <a href="#" class="rememberMe">Remember Me </a>
+          <!-- <input type="checkbox"> -->
+          <button onclick="succeed()">Sign Up</button>
+          <h4>---------------------</h4>
+          <button onclick="sorry">Sign In</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="contactus">Contact Us</h1>
+          <p class="message">
+            How can we help you? Send us an email if there is something went wrong!
+          </p>
+        </div>
+        <div class="col-12">
+          <input type="text" placeholder="Fullname" class="txtUsername" />
+          <input type="text" placeholder="Email" class="txtEmail" />
+          <textarea
+            class="commentArea"
+            placeholder="Enter your comment here ..."
+          ></textarea>
+          <button class="submitCmt">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footsy">
+      <div class="row">
+        <div class="col-3 mobileStack">
+          <h1>Company</h1>
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-3 mobileStack">
+          <h1>Products</h1>
+          <ul>
+            <li><a href="">Laptops</a></li>
+            <li><a href="">iPads</a></li>
+            <li><a href="">iPhones</a></li>
+          </ul>
+        </div>
+        <div class="col-3 mobileStack">
+          <h1>Learn More</h1>
+          <ul>
+            <li><a href="">Shirts</a></li>
+            <li><a href="">Mugs</a></li>
+            <li><a href="">Cases</a></li>
+          </ul>
+        </div>
+        <div class="col-3 mobileStack">
+          <h1>Support</h1>
+          <ul>
+            <li><a href="">Help</a></li>
+            <li><a href="">QA</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

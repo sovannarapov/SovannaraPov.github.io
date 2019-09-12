@@ -1,0 +1,1296 @@
+/* GRID SYSTEM */
+.row {
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.row::after {
+display: table;
+clear: both;
+content: "";
+}
+
+.col-1 {
+width: 8.33%;
+}
+
+.col-2 {
+width: 16.66%;
+}
+
+.col-3 {
+width: 25%;
+}
+
+.col-4 {
+width: 33.33%;
+}
+
+.col-5 {
+width: 41.66%;
+}
+
+.col-6 {
+width: 50%;
+}
+
+.col-7 {
+width: 58.33%;
+}
+
+.col-8 {
+width: 66.66%;
+}
+
+.col-9 {
+width: 75%;
+}
+
+.col-10 {
+width: 83.33%;
+}
+
+.col-11 {
+width: 91.66%;
+}
+
+.col-12 {
+width: 100%;
+}
+
+* {
+box-sizing: border-box;
+}
+
+/* GRID SYSTEM ENDING */
+
+/*### Defaults ###*/
+nav,
+header,
+footer {
+display: block;
+}
+
+body {
+line-height: 1;
+margin: 0;
+}
+
+.container {
+width: 100%;
+margin: auto;
+padding-top: 2%;
+padding-bottom: 2%;
+}
+
+/*### Navbar ###*/
+nav {
+width: 100%;
+margin: 0;
+}
+
+nav ul {
+background: #eee;
+overflow: hidden;
+margin: 0;
+padding: 0;
+}
+
+ul.topnav li {
+list-style: none;
+float: left;
+}
+
+ul.topnav li a::after {
+content: "";
+width: 0px;
+height: 2px;
+background-color: white;
+transition: width 0.3s;
+display: block;
+margin-top: 3px;
+}
+
+ul.topnav li a:hover::after {
+width: 100%;
+transition: width 0.3s;
+}
+
+ul.topnav li.topnav-right {
+float: right;
+}
+
+ul.topnav li a {
+display: block;
+text-decoration: none;
+min-height: 18px;
+font-family: monospace;
+font-size: 20px;
+padding: 16px;
+text-transform: uppercase;
+color: black;
+}
+
+ul.topnav li a:hover {
+background-color: #0080ff;
+color: #fff;
+}
+
+ul.topnav .dropdownIcon {
+display: none;
+}
+
+.fa-home {
+font-size: 18px;
+}
+
+/* Home Page */
+/* ### Login Form ### */
+.popup {
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.7);
+position: fixed;
+top: 0;
+left: 0;
+display: none;
+text-align: center;
+}
+
+.btnClose {
+background-color: red;
+color: white;
+font-size: 8px;
+position: absolute;
+right: 64%;
+top: 13%;
+padding: 7px 10px;
+cursor: pointer;
+border-radius: 200px;
+z-index: 1;
+}
+
+.btnClose h1 {
+margin: 0;
+}
+
+.btnClose h1:hover {
+color: black;
+}
+
+.loginForm {
+width: 30%;
+background-color: #0080ff;
+position: absolute;
+top: 14%;
+right: 35%;
+border-radius: 10px;
+}
+
+.loginForm h1 {
+font-family: cursive;
+font-weight: bold;
+padding-top: 20px;
+color: white;
+}
+
+.loginForm hr {
+width: 80%;
+height: 3px;
+background-color: white;
+}
+
+.loginForm h3 {
+color: white;
+font-family: cursive;
+font-weight: bold;
+}
+
+.loginForm input {
+width: 300px;
+min-width: 100px;
+font-family: cursive;
+font-size: 18px;
+padding: 5px;
+border-radius: 5px;
+border: none;
+margin-bottom: 20px;
+}
+
+.loginForm button {
+font-family: cursive;
+font-size: 20px;
+color: #fff;
+background: #0069ff;
+border: none;
+border-radius: 7px;
+padding: 10px 10px;
+margin: 20px auto;
+}
+
+.loginForm button::after {
+content: "";
+width: 0px;
+height: 2px;
+background-color: #fff;
+display: block;
+transition: width 0.3s;
+margin-top: 3px;
+}
+
+.loginForm button:hover::after {
+width: 100%;
+transition: width 0.3s;
+}
+
+.loginForm button:hover {
+border: 2px solid white;
+transition: 0.5s;
+}
+
+.loginForm a {
+font-family: cursive;
+font-weight: bold;
+color: white;
+text-decoration: none;
+font-size: 20px;
+}
+
+.loginForm h4 {
+font-family: cursive;
+font-weight: bold;
+color: white;
+margin: auto;
+}
+
+.loginForm a .rememberMe {
+font-family: cursive;
+font-weight: bold;
+color: white;
+text-decoration: none;
+font-size: 20px;
+}
+
+/*### Cover ###*/
+#cover {
+background-color: #0080ff;
+}
+
+div.leftSide-col {
+margin-left: 22%;
+}
+
+div.leftSide-col h1.large {
+color: white;
+font-family: cursive;
+}
+
+.col-6.large {
+color: white;
+margin: 0;
+line-height: 40px;
+font-family: fantasy;
+}
+
+form h2 {
+font-family: cursive;
+color: white;
+}
+
+input[type="text"] {
+width: 300px;
+min-width: 100px;
+font-family: cursive;
+font-size: 18px;
+padding: 5px;
+border-radius: 5px;
+border: none;
+}
+
+div.rightSide-col .discount img{
+width: 70%;
+margin: auto;
+display: block;
+box-shadow: -2px -2px 16px 1px rgba(0, 0, 0, 0.2),
+1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+h1.section2Header {
+font-family: cursive;
+font-size: 40px;
+text-align: center;
+}
+
+div.box {
+margin: 0px 20px 20px 20px;
+padding: 10px;
+text-align: center;
+background-color: #fff;
+box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+border: none;
+border-radius: 5px;
+}
+
+div.icon {
+width: 25%;
+margin: 0 35%;
+margin-bottom: 20px;
+transition: transform .2s;
+}
+
+div.icon:hover{
+cursor: pointer;
+transform: scale(0.9);
+}
+
+label {
+font-family: cursive;
+font-size: 30px;
+font-weight: bold;
+}
+
+p {
+font-family: monospace;
+font-size: 18px;
+line-height: 1.2;
+}
+.col-12 a{
+text-decoration: none;
+}
+button {
+font-family: cursive;
+font-size: 20px;
+color: #fff;
+background: #0069ff;
+border: none;
+border-radius: 7px;
+padding: 15px 60px;
+text-align: center;
+display: block;
+margin: 5px;
+}
+
+button:hover {
+cursor: pointer;
+}
+
+button.learnMore {
+display: block;
+margin: auto;
+}
+
+hr {
+height: 1px;
+border: none;
+background-color: #0080ff;
+}
+
+article p {
+margin: 0px 40px;
+line-height: 1.6;
+text-align: justify;
+}
+
+div.slopeIcon img {
+width: 380px;
+height: 220px;
+display: block;
+margin: auto;
+box-shadow: -2px -2px 16px 1px rgba(0, 0, 0, 0.2),
+1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+footer.footsy {
+background-color: #eee;
+display: block;
+padding-left: 10%;
+}
+
+footer.footsy h1 {
+font-family: monospace;
+font-size: 30px;
+color: grey;
+}
+
+footer.footsy ul {
+list-style: none;
+text-align: left;
+padding-left: 5px;
+}
+
+footer.footsy ul li {
+line-height: 1.5;
+}
+
+footer.footsy ul li a {
+text-decoration: none;
+color: #0080ff;
+font-family: monospace;
+font-size: 20px;
+}
+/* End */
+
+/* Contact Page */
+.col-12 h1.contactus {
+font-family: cursive;
+font-size: 40px;
+text-align: center;
+}
+.col-12 p.message {
+text-align: center;
+}
+.col-12 input.txtUsername {
+display: block;
+margin: auto;
+border-bottom: 1px solid grey;
+outline: none;
+border-radius: 0;
+margin: 2% auto;
+text-align: center;
+}
+.col-12 input.txtEmail {
+display: block;
+margin: 2% auto;
+border-radius: 0;
+outline: none;
+border-bottom: 1px solid grey;
+text-align: center;
+}
+.col-12 textarea.commentArea {
+margin: 2% auto;
+display: block;
+width: 40%;
+height: 300px;
+font-size: 18px;
+}
+.col-12 button.submitCmt {
+margin: auto;
+}
+/* End */
+
+/* About Us Page */
+.col-12 .aboutus img{
+width: 30%;
+margin: auto;
+display: block;
+}
+
+.col-12 h3{
+font-family: cursive;
+font-size: 20px;
+margin: 40px 20px 20px 20px;
+}
+
+.col-12 p{
+font-family: monospace;
+text-align: justify;
+line-height: 1.5;
+background-color: #eee;
+border-radius: 15px;
+padding: 20px;
+margin: 0 20px;
+font-size: 16px;
+}
+/* End */
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.99px) {
+/* Home Page */
+div.leftSide-col h1.large {
+color: white;
+font-family: cursive;
+}
+
+div.leftSide-col h1.large{
+margin: 4% 0 4% 0;
+}
+
+.popup {
+display: none;
+}
+
+/* Login Form*/
+.loginForm input {
+width: 250px;
+min-width: 100px;
+font-family: cursive;
+font-size: 18px;
+padding: 5px;
+border-radius: 5px;
+border: none;
+margin: 5px auto;
+}
+
+.loginForm button {
+font-family: cursive;
+font-size: 20px;
+color: #fff;
+background: #0069ff;
+border: none;
+border-radius: 7px;
+padding: 10px 10px;
+margin: 20px auto;
+}
+
+.loginForm button::after {
+content: "";
+width: 0px;
+height: 2px;
+background-color: #fff;
+display: block;
+transition: width 0.3s;
+margin-top: 3px;
+}
+
+.loginForm button:hover::after {
+width: 100%;
+transition: width 0.3s;
+}
+
+.loginForm button:hover {
+border: 2px solid white;
+transition: 0.5s;
+}
+
+.loginForm a {
+font-family: cursive;
+font-weight: bold;
+color: white;
+text-decoration: none;
+font-size: 20px;
+}
+
+.loginForm h4 {
+font-family: cursive;
+font-weight: bold;
+color: white;
+margin: auto;
+}
+
+.loginForm a .rememberMe {
+font-family: cursive;
+font-weight: bold;
+color: white;
+text-decoration: none;
+font-size: 20px;
+}
+
+/* End */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.99px) {
+/* Home Page */
+ul.topnav li:not(:nth-child(1)) {
+display: none;
+}
+
+ul.topnav li.dropdownIcon {
+display: block;
+float: right;
+}
+
+ul.topnav.responsive li.dropdownIcon {
+position: absolute;
+top: 0;
+right: 0;
+transition: 100s;
+}
+
+ul.topnav.responsive {
+position: relative;
+}
+
+ul.topnav.responsive li {
+display: inline;
+float: none;
+}
+
+ul.topnav.responsive li a {
+display: block;
+text-align: left;
+}
+
+ul.topnav li a:hover::after {
+width: 0;
+}
+
+.col-7,
+.col-6,
+.col-5,
+.col-4 {
+width: 100%;
+margin: 0;
+}
+
+div.leftSide-col {
+margin-left: 25%;
+}
+
+div.leftSide-col h1.large {
+color: white;
+font-family: cursive;
+margin-left: 8%;
+font-size: 33px;
+}
+
+div.leftSide-col img{
+margin-left: 8%;
+}
+	
+div.leftSide-col h2 {
+margin-left: 8%;
+}
+
+div.rightSide-col .discount img{
+width: 70%;
+}
+
+input[type="text"] {
+width: 300px;
+margin: 0 0 4% 8%;
+font-family: monospace;
+}
+
+/*
+input[type="password"] {
+width: 300px;
+font-family: monospace;
+margin-bottom: 6%;
+}
+*/
+
+div.rightSide-col .discount img{
+width: 70%;
+margin: auto;
+display: block;
+box-shadow: -2px -2px 16px 1px rgba(0, 0, 0, 0.2),
+1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+form h2 {
+font-family: monospace;
+}
+
+div.box {
+padding: 5px;
+display: block;
+}
+
+h1.section2Header {
+font-family: cursive;
+font-size: 35px;
+font-weight: bold;
+}
+	
+div.icon {
+width: 25%;
+margin: 0 39%;
+margin-bottom: 20px;
+transition: transform .2s;
+}
+
+hr {
+height: 1px;
+border: none;
+background-color: #0080ff;
+}
+
+article p {
+margin-bottom: 8%;
+}
+
+/* Login Form*/
+.popup {
+display: none !important;
+}
+.loginForm {
+display: none;
+}
+.btnClose {
+display: none;
+}
+
+footer.footsy {
+margin-top: 5%;
+padding-left: 18%;
+}
+
+div.mobileStack {
+width: 50%;
+display: block;
+}
+
+div.mobileStack h1:hover {
+color: #0080ff;
+}
+/* End */
+
+/* Contact Page */
+.col-12 h1.contactus {
+font-family: cursive;
+font-size: 40px;
+text-align: center;
+}
+.col-12 p.message {
+text-align: center;
+}
+.col-12 input.txtUsername {
+border-bottom: 1px solid grey;
+outline: none;
+border-radius: 0;
+text-align: center;
+}
+.col-12 input.txtEmail {
+border-radius: 0;
+outline: none;
+border-bottom: 1px solid grey;
+text-align: center;
+}
+.col-12 textarea.commentArea {
+margin: 2% auto;
+display: block;
+width: 60%;
+height: 300px;
+font-size: 18px;
+}
+.col-12 button.submitCmt {
+margin: auto;
+}
+/* End */
+/* About Us Page */
+.col-12 .aboutus img{
+width: 30%;
+margin: auto;
+display: block;
+}
+
+.col-12 h3{
+font-family: cursive;
+font-size: 20px;
+margin: 40px 20px 20px 20px;
+}
+
+.col-12 p{
+font-family: monospace;
+/*text-align: justify;*/
+line-height: 1.5;
+background-color: #eee;
+border-radius: 15px;
+font-size: 16px;
+}
+/* End */
+
+}
+
+/* Small devices (landscape phone, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.99px) {
+/* Home Page */
+ul.topnav li:not(:nth-child(1)) {
+display: none;
+}
+
+ul.topnav li.dropdownIcon {
+display: block;
+float: right;
+}
+
+ul.topnav.responsive li.dropdownIcon {
+position: absolute;
+top: 0;
+right: 0;
+}
+
+ul.topnav.responsive {
+position: relative;
+}
+
+ul.topnav.responsive li {
+display: inline;
+float: none;
+}
+
+ul.topnav.responsive li a {
+display: block;
+text-align: left;
+}
+
+ul.topnav li a:hover::after {
+width: 0;
+}
+
+.col-7,
+.col-6,
+.col-5,
+.col-4 {
+width: 100%;
+margin: 0;
+}
+
+div.leftSide-col {
+margin-left: 18%;
+}
+
+div.leftSide-col h1.large {
+color: white;
+font-family: cursive;
+margin-left: 8%;
+}
+
+div.leftSide-col img{
+margin-left: 8%;
+}
+
+input[type="text"] {
+width: 300px;
+font-family: monospace;
+margin: 0 0 4% 8%;
+}
+
+/*
+input[type="password"] {
+width: 60%;
+font-family: monospace;
+margin-left: 8%;
+margin-bottom: 6%;
+}
+*/
+
+div.rightSide-col .discount img {
+width: 70%;
+margin: auto;
+display: block;
+box-shadow: -2px -2px 16px 1px rgba(0, 0, 0, 0.2),
+1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+form h2 {
+margin-left: 40px;
+font-family: monospace;
+}
+
+div.box {
+padding: 5px;
+display: block;
+}
+
+h1.section2Header {
+font-family: cursive;
+font-size: 32px;
+font-weight: bold;
+margin: 20px;
+}
+	
+div.icon {
+width: 25%;
+margin: 0 39%;
+margin-bottom: 20px;
+transition: transform .2s;
+}
+
+hr {
+height: 1px;
+border: none;
+background-color: #0080ff;
+}
+
+article p {
+margin-bottom: 8%;
+}
+
+footer.footsy {
+margin-top: 5%;
+padding-left: 16%;
+}
+
+div.mobileStack {
+width: 50%;
+display: block;
+}
+
+div.mobileStack h1:hover {
+color: #0080ff;
+}
+/* End */
+
+/* Login Form*/
+.popup {
+display: none !important;
+}
+.loginForm {
+display: none;
+}
+.btnClose {
+display: none;
+}
+
+footer.footsy {
+margin-top: 5%;
+padding-left: 18%;
+}
+
+div.mobileStack {
+width: 50%;
+display: block;
+}
+
+div.mobileStack h1:hover {
+color: #0080ff;
+}
+/* End */
+
+/* Contact Page */
+.col-12 textarea.commentArea {
+margin: 2% auto;
+display: block;
+width: 60%;
+height: 200px;
+font-size: 18px;
+}
+/* End */
+/* About Us Page */
+.col-12 .aboutus img{
+width: 30%;
+margin: auto;
+display: block;
+}
+
+.col-12 h3{
+font-family: cursive;
+font-size: 20px;
+margin: 40px 20px 20px 20px;
+}
+
+.col-12 p{
+font-family: monospace;
+text-align: justify;
+line-height: 1.5;
+background-color: #eee;
+border-radius: 15px;
+font-size: 16px;
+padding: 20px;
+}
+/* End */
+
+}
+
+/* Extra small devices ( iPhone 6 / 7 / 8 ) */
+@media (min-width: 425px) and (max-width: 575.99px) {
+/* Home Page */
+ul.topnav li:not(:nth-child(1)) {
+display: none;
+}
+
+ul.topnav li.dropdownIcon {
+display: block;
+float: right;
+}
+
+ul.topnav.responsive li.dropdownIcon {
+position: absolute;
+top: 0;
+right: 0;
+transition: height 0.3s linear 0s;
+}
+
+ul.topnav.responsive {
+position: relative;
+}
+
+ul.topnav.responsive li {
+display: inline;
+float: none;
+}
+
+ul.topnav.responsive li a {
+display: block;
+text-align: left;
+}
+
+ul.topnav li a:hover::after {
+width: 0;
+}
+
+.col-7,
+.col-6,
+.col-5,
+.col-4 {
+width: 100%;
+margin: 0;
+}
+
+div.leftSide-col h1.large {
+color: white;
+font-family: cursive;
+}
+
+input[type="text"] {
+width: 290px;
+margin: 0 0 4% 0;	
+font-family: monospace;
+}
+
+/*
+input[type="password"] {
+width: 250px;
+font-family: monospace;
+margin-bottom: 6%;
+}
+*/
+
+div.rightSide-col .discount img {
+width: 70%;
+display: block;
+box-shadow: -2px -2px 16px 1px rgba(0, 0, 0, 0.2),
+1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+form h2 {
+font-family: monospace;
+font-size: 22px;
+}
+
+div.box {
+padding: 5px;
+display: block;
+}
+
+h1.section2Header {
+font-family: cursive;
+font-size: 28px;
+font-weight: bold;
+margin: 20px;
+}
+
+hr {
+height: 1px;
+border: none;
+background-color: #0080ff;
+}
+
+article p {
+margin-bottom: 8%;
+}
+
+footer.footsy {
+margin-top: 5%;
+padding-left: 16%;
+}
+
+div.mobileStack {
+width: 50%;
+display: block;
+}
+
+div.mobileStack h1:hover {
+color: #0080ff;
+}
+/* End */
+
+/* Login Form*/
+.popup {
+display: none !important;
+}
+.loginForm {
+display: none;
+}
+.btnClose {
+display: none;
+}
+
+footer.footsy {
+margin-top: 5%;
+padding-left: 18%;
+}
+
+div.mobileStack {
+width: 50%;
+display: block;
+}
+
+div.mobileStack h1:hover {
+color: #0080ff;
+}
+/* End */
+
+/* Contact Page */
+.col-12 textarea.commentArea {
+margin: 2% auto;
+display: block;
+width: 60%;
+height: 200px;
+font-size: 18px;
+}
+/* End */
+}
+
+/* Extra small devices ( iPhone X ) */
+@media (min-width: 375px) and (max-width: 424.99px) {
+/* Home Page */
+ul.topnav li:not(:nth-child(1)) {
+display: none;
+}
+
+ul.topnav li.dropdownIcon {
+display: block;
+float: right;
+}
+
+ul.topnav.responsive li.dropdownIcon {
+position: absolute;
+top: 0;
+right: 0;
+}
+
+ul.topnav.responsive {
+position: relative;
+}
+
+ul.topnav.responsive li {
+display: inline;
+float: none;
+}
+
+ul.topnav.responsive li a {
+display: block;
+text-align: left;
+}
+
+ul.topnav li a:hover::after {
+width: 0;
+}
+
+.col-7,
+.col-6,
+.col-5,
+.col-4 {
+width: 100%;
+margin: 0;
+}
+
+div.leftSide-col h1.large {
+color: white;
+font-family: cursive;
+font-size: 22px;
+}
+
+div.leftSide-col img{
+margin-left: 8%;
+}
+
+input[type="text"] {
+width: 220px;
+font-family: monospace;
+margin: 0 0 4% 8%;
+}
+
+div.rightSide-col .discount img {
+width: 70%;
+display: block;
+box-shadow: -2px -2px 16px 1px rgba(0, 0, 0, 0.2),
+1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+form h2 {
+font-family: monospace;
+font-size: 22px;
+}
+
+div.box {
+padding: 5px;
+display: block;
+}
+
+h1.section2Header {
+font-family: cursive;
+font-size: 22px;
+font-weight: bold;
+margin: 20px;
+}
+
+hr {
+height: 1px;
+border: none;
+background-color: #0080ff;
+}
+
+article p {
+margin-bottom: 8%;
+}
+
+footer.footsy {
+margin-top: 5%;
+padding-left: 16%;
+}
+
+div.mobileStack {
+width: 50%;
+display: block;
+}
+
+div.mobileStack h1:hover {
+color: #0080ff;
+}
+/* End */
+
+/* Login Form*/
+.popup {
+display: none !important;
+}
+.loginForm {
+display: none;
+}
+.btnClose {
+display: none;
+}
+
+footer.footsy {
+margin-top: 5%;
+padding-left: 18%;
+}
+
+div.mobileStack {
+width: 50%;
+display: block;
+}
+
+div.mobileStack h1:hover {
+color: #0080ff;
+}
+/* End */
+
+/* Contact Page */
+.col-12 textarea.commentArea {
+margin: 2% auto;
+display: block;
+width: 60%;
+height: 200px;
+font-size: 18px;
+}
+/* End */
+/* About Us Page */
+.col-12 .aboutus img{
+width: 30%;
+margin: auto;
+display: block;
+}
+
+.col-12 h3{
+font-family: cursive;
+font-size: 20px;
+margin: 40px 20px 20px 20px;
+}
+
+.col-12 p{
+font-family: monospace;
+text-align: justify;
+line-height: 1.5;
+background-color: #eee;
+border-radius: 15px;
+font-size: 16px;
+}
+/* End */
+
+}
